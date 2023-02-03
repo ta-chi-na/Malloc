@@ -1,0 +1,16 @@
+#include <cs50.h>
+#include <ctype.h> // makes a copy of a string
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    string s = get_string("s: ");
+
+    string t = s;
+
+    t[0] = toupper(t[0]); // changes 't' to uppercase
+
+    printf("s: %s\n", s);
+    printf("t: %s\n", t);
+}
